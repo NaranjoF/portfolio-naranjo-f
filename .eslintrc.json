@@ -25,7 +25,9 @@
   "plugins": ["react", "react-hooks", "@typescript-eslint", "prettier"],
   "rules": {
     "prettier/prettier": "error",
-    "import/no-extraneous-dependencies": ["error", false]
+    "import/no-extraneous-dependencies": "off",
+    "react/button-has-type": "error",
+    "import/prefer-default-export": "off"
   },
   "settings": {
     "react": {

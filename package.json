@@ -21,8 +21,11 @@
     "uuid": "^10.0.0"
   },
   "lint-staged": {
-    "src/**/*.(ts|tsx|json|css)": [
+    "src/**/*.{ts,tsx}": [
       "npm run lint:fix",
+      "npm run format"
+    ],
+    "src/**/*.{json}": [
       "npm run format"
     ]
   },
