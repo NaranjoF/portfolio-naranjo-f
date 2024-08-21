@@ -5,6 +5,8 @@ type Props = {
   shouldShowMobileNavbar: boolean;
 };
 
+export const navBarMobileTestId = 'navbar-mobile';
+
 export default function NavbarMobile({
   navbarLinks,
   shouldShowMobileNavbar,
@@ -12,6 +14,7 @@ export default function NavbarMobile({
   return (
     <div
       className={`${shouldShowMobileNavbar ? 'opacity-100 md:invisible' : 'invisible opacity-0'} flex w-full absolute top-[105%] left-0 right-0 bg-gray-06 bg-opacity-95 transition-all duration-150`}
+      data-testid={navBarMobileTestId}
     >
       <div className="flex w-full h-full justify-center items-center">
         <nav className="w-full h-full">
@@ -21,7 +24,9 @@ export default function NavbarMobile({
                 key={uuidv4()}
                 className="text-white text-center text-xl hover:bg-gray-10 hover:rounded-full transition-all my-2 w-full h-full"
               >
-                <a href={`#${link}`}>{link}</a>
+                <a href={`#${link}`} data-testid={`navbar-mobile-link-${link}`}>
+                  {link}
+                </a>
               </li>
             ))}
           </ul>

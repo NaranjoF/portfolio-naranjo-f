@@ -8,8 +8,11 @@ import mobileMenuLogo from '../../../../public/images/mobileMenuLogo.svg';
 import NavbarMobile from './navbarMobile';
 import { Sections } from './utils';
 
+export const navBarLinks = Object.values(Sections);
+export const navBarMobileButtonTestid = 'navbar-mobile-button';
+export const navBarLinkTestId = 'navbar-link-';
+
 export default function Navbar() {
-  const navbarLinks = Object.values(Sections);
   const [shouldShowMobileNavbar, setShouldShowMobileNavbar] = useState(false);
 
   return (
@@ -29,6 +32,7 @@ export default function Navbar() {
           onClick={() => setShouldShowMobileNavbar(!shouldShowMobileNavbar)}
           className="w-full h-full flex items-center justify-center"
           type="button"
+          data-testid={navBarMobileButtonTestid}
         >
           <Image
             src={mobileMenuLogo}
@@ -39,16 +43,17 @@ export default function Navbar() {
         </button>
       </div>
       <NavbarMobile
-        navbarLinks={navbarLinks}
+        navbarLinks={navBarLinks}
         shouldShowMobileNavbar={shouldShowMobileNavbar}
       />
       <nav className="hidden md:flex">
         <ul className="flex list-none">
-          {navbarLinks.map(link => (
+          {navBarLinks.map(link => (
             <li key={uuidv4()}>
               <a
                 className="text-white text-sm py-3 px-4 hover:bg-gray-10 hover:rounded-full transition-all"
                 href={`#${link}`}
+                data-testid={`${navBarLinkTestId}${link}`}
               >
                 {link}
               </a>
