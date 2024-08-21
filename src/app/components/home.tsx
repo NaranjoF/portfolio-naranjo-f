@@ -2,11 +2,14 @@ import Image from 'next/image';
 import whiteDragon from '../../../public/images/whiteDragon.png';
 import { Sections } from './navbar/utils';
 
+export const homeTestId = 'home';
+
 export default function Home() {
   return (
     <div
       className="min-h-screen bg-[url('/images/homeBackground.png')] bg-no-repeat flex flex-col xl:flex-row items-center justify-center xl:justify-between px-12"
       id={Sections.HOME}
+      data-testid={homeTestId}
     >
       <div className="hidden justify-center items-center md:flex xl:hidden mb-2">
         <Image
