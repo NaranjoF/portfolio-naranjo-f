@@ -1,6 +1,5 @@
 import Image from 'next/image';
-import githubLogo from '../../../public/images/githubLogo.svg';
-import linkedinLogo from '../../../public/images/linkedinLogo.svg';
+import { footerIcons } from '../../../../public/images/footer/footerIcons';
 
 export const footerTestId = 'footer';
 export const githubLink = 'https://github.com/NaranjoF';
@@ -20,7 +19,7 @@ export default function Footer() {
           <button type="button" className="mr-3 w-full h-full">
             <a href={githubLink} target="_blank" rel="noreferrer">
               <Image
-                src={githubLogo}
+                src={footerIcons.githubLogo}
                 alt="github logo gray"
                 className="hover:-translate-y-1 hover:scale-105 duration-150"
                 width={20}
@@ -32,7 +31,7 @@ export default function Footer() {
           <button type="button" className="w-full h-full">
             <a href={linkedinLink} target="_blank" rel="noreferrer">
               <Image
-                src={linkedinLogo}
+                src={footerIcons.linkedinLogo}
                 alt="linkedin logo gray"
                 className="hover:-translate-y-1 hover:scale-105 duration-150"
                 width={20}
