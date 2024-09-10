@@ -6,7 +6,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -31,9 +30,8 @@ body {
   }
 }
 
-
 ::-webkit-scrollbar {
-width: 15px;
+  width: 15px;
 }
 
 ::-webkit-scrollbar-track {
