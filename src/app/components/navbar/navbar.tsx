@@ -16,14 +16,13 @@ export default function Navbar() {
   const [shouldShowMobileNavbar, setShouldShowMobileNavbar] = useState(false);
 
   return (
-    <div className="fixed top-0 left-0 right-0 bg-transparent bg-opacity-30 backdrop-blur-sm text-white flex flex-row justify-between pt-3 items-center border-b border-gray-12 px-12">
+    <div className="fixed top-0 left-0 right-0 bg-transparent bg-opacity-30 backdrop-blur-sm text-white flex flex-row justify-between pt-3 items-center border-b border-gray-12 px-12 z-10">
       <div className="pb-3">
         <a className="flex items-center" href={`#${Sections.HOME}`}>
           <Image
             src={whiteDragon}
             alt="Rounded logo showing a white dragon."
-            width={50}
-            height={50}
+            className="w-[3.1rem] h-[3.1rem]"
           />
         </a>
       </div>
@@ -37,8 +36,7 @@ export default function Navbar() {
           <Image
             src={mobileMenuLogo}
             alt="Rounded logo showing a white dragon."
-            width={20}
-            height={20}
+            className="w-[1.25rem] h-[1.25rem]"
           />
         </button>
       </div>
