@@ -13,7 +13,7 @@ export default function NavbarMobile({
 }: Readonly<Props>) {
   return (
     <div
-      className={`${shouldShowMobileNavbar ? 'opacity-100 md:invisible' : 'invisible opacity-0'} flex w-full absolute top-[105%] left-0 right-0 bg-gray-06 bg-opacity-95 transition-all duration-150`}
+      className={`${shouldShowMobileNavbar ? 'opacity-100 md:invisible' : 'invisible opacity-0'} flex w-full absolute top-[100%] left-0 right-0 bg-gray-06 bg-opacity-95 transition-all duration-150`}
       data-testid={navBarMobileTestId}
     >
       <div className="flex w-full h-full justify-center items-center">

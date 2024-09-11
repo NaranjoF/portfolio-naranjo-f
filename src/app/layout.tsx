@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { Sora } from 'next/font/google';
 import './globals.css';
 import Navbar from './components/navbar/navbar';
-import Footer from './components/footer';
+import Footer from './components/footer/footer';
 
 const sora = Sora({
   subsets: ['latin'],
@@ -11,7 +11,7 @@ const sora = Sora({
 });
 
 export const metadata: Metadata = {
-  title: 'Facundo Naranjo',
+  title: 'Facundo Naranjo | Portfolio',
 };
 
 export default function RootLayout({
