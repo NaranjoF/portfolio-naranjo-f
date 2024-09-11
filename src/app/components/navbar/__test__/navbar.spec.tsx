@@ -1,12 +1,9 @@
 import { render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import Navbar, {
-  navBarLinks,
-  navBarLinkTestId,
-  navBarMobileButtonTestid,
-} from '../navbar';
+import Navbar, { navBarLinks, navBarMobileButtonTestid } from '../navbar';
 import '@testing-library/jest-dom';
 import { navBarMobileTestId } from '../navbarMobile';
+import { navBarLinkTestId } from '../utils';
 
 describe('Navbar', () => {
   it('should render the navbar with the correct links', () => {

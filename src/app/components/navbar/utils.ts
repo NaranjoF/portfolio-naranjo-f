@@ -5,3 +5,5 @@ export enum Sections {
   SKILLS = 'Skills',
   CONTACT = 'Contact',
 }
+
+export const navBarLinkTestId = 'navbar-link-';

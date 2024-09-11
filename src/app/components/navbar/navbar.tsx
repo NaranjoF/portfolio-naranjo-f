@@ -6,11 +6,10 @@ import { useState } from 'react';
 import whiteDragon from '../../../../public/images/whiteDragon.png';
 import mobileMenuLogo from '../../../../public/images/mobileMenuLogo.svg';
 import NavbarMobile from './navbarMobile';
-import { Sections } from './utils';
+import { navBarLinkTestId, Sections } from './utils';
 
 export const navBarLinks = Object.values(Sections);
 export const navBarMobileButtonTestid = 'navbar-mobile-button';
-export const navBarLinkTestId = 'navbar-link-';
 
 export default function Navbar() {
   const [shouldShowMobileNavbar, setShouldShowMobileNavbar] = useState(false);
