@@ -2,11 +2,14 @@ import { aboutMeItems } from './utils';
 import ItemSection from './components/itemSection';
 import { Sections } from '../navbar/utils';
 
+export const aboutTestId = 'about';
+
 export default function About() {
   return (
     <section
       className="flex flex-col justify-center items-center"
       id={Sections.ABOUT}
+      data-testid={aboutTestId}
     >
       <div className="pb-3 flex flex-col justify-center items-center">
         <h2 className="font-semibold text-2xl md:text-3xl xl:text-2xl">
