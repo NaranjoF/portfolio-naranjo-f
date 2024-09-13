@@ -24,7 +24,7 @@ export default function ExperienceItem({
 }: Readonly<Props>) {
   return (
     <div className="max-w-[20rem] md:max-w-[42rem] border border-gray-12 rounded-2xl p-10 flex flex-col justify-center items-center bg-gradient-to-b from-[#1A1A1A] from-[-10%] to-[rgba(26,26,26,0)] to-[68%] shadow-sm shadow-black">
-      <div className="border border-gray-12 rounded-2xl relative">
+      <div className="border border-gray-20 rounded-2xl relative">
         <Image
           src={experienceItemAssets.backgroundItem}
           className="w-[37rem] h-auto"
