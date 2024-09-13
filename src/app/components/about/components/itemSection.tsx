@@ -19,7 +19,7 @@ export default function ItemSection({ items, lastElements }: Readonly<Props>) {
           return (
             <div
               key={uuidv4()}
-              className="flex flex-col xl:flex-row justify-center items-start"
+              className="flex flex-col xl:flex-row justify-center items-center xl:items-start"
             >
               <div className="hidden xl:flex h-64 w-[0.5px] bg-gray-12" />
               <ItemCard
@@ -30,7 +30,7 @@ export default function ItemSection({ items, lastElements }: Readonly<Props>) {
                 classToAdd="mb-6 xl:mb-0 xl:mx-14"
               />
               <div className="hidden xl:flex h-64 w-[0.5px] bg-gray-12" />
-              <div className="xl:hidden h-[0.5px] w-full bg-gray-12 mb-6" />
+              <div className="xl:hidden h-[0.5px] w-3/4 bg-gray-12 mb-6" />
             </div>
           );
         }
@@ -38,7 +38,7 @@ export default function ItemSection({ items, lastElements }: Readonly<Props>) {
         return (
           <div
             key={uuidv4()}
-            className="flex flex-col xl:flex-row justify-center items-start"
+            className="flex flex-col xl:flex-row justify-center items-center xl:items-start"
           >
             <ItemCard
               key={uuidv4()}
@@ -51,7 +51,7 @@ export default function ItemSection({ items, lastElements }: Readonly<Props>) {
               }
             />
             <div
-              className={`xl:hidden h-[0.5px] w-full bg-gray-12 mb-6 ${lastElements && index === items.length - 1 ? 'hidden' : ''}`}
+              className={`xl:hidden h-[0.5px] w-3/4 bg-gray-12 mb-6 ${lastElements && index === items.length - 1 ? 'hidden' : ''}`}
             />
           </div>
         );
