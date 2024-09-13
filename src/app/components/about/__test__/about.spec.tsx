@@ -4,7 +4,7 @@ import About, { aboutTestId } from '../about';
 import { aboutMeItems } from '../utils';
 
 describe('About section', () => {
-  it('Should render the footer component', () => {
+  it('Should render the about component', () => {
     render(<About />);
 
     expect(screen.getByTestId(aboutTestId)).toBeInTheDocument();

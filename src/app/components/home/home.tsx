@@ -54,12 +54,14 @@ export default function Home() {
                 Go to About
               </button>
             </a>
-            <button
-              className="bg-gray-10 p-3 rounded-full text-sm transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-105 duration-150 md:text-base md:p-4 xl:p-3 xl:text-sm"
-              type="button"
-            >
-              Go to Experience
-            </button>
+            <a href={`#${Sections.EXPERIENCE}`}>
+              <button
+                className="bg-gray-10 p-3 rounded-full text-sm transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-105 duration-150 md:text-base md:p-4 xl:p-3 xl:text-sm"
+                type="button"
+              >
+                Go to Experience
+              </button>
+            </a>
           </div>
         </div>
       </div>
