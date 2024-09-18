@@ -56,7 +56,7 @@ export default function ExperienceItem({
         </div>
 
         <div className="mt-2 text-xs text-center md:text-left md:text-sm flex justify-start w-full">
-          <p>{mainTechnologies}</p>
+          <p>Main technologies: {mainTechnologies}</p>
         </div>
 
         <div className="mt-3 text-sm flex justify-start w-full">

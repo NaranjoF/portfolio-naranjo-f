@@ -30,8 +30,7 @@ export default function Home() {
       <div className="flex justify-center flex-col text-center xl:text-left">
         <div className="flex justify-center flex-col">
           <h1 className="text-grey-40 font-semibold text-3xl md:text-4xl xl:text-3xl mb-2">
-            Hi! I am <span className="text-white">Facundo Naranjo</span>, a{' '}
-            <span className="text-white">Full Stack Dev</span>.
+            Hi! I am Facundo Naranjo, a Full Stack Dev.
           </h1>
           <p className="text-sm md:text-lg xl:text-sm text-white-50">
             Based in Argentina, I specialize in creating intuitive user
