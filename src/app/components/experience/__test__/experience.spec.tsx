@@ -19,7 +19,9 @@ describe('Experience section', () => {
       expect(screen.getByText(item.companyLocation)).toBeInTheDocument();
       expect(screen.getByText(item.date)).toBeInTheDocument();
       expect(screen.getByText(item.description)).toBeInTheDocument();
-      expect(screen.getByText(item.mainTechnologies)).toBeInTheDocument();
+      expect(
+        screen.getByText(`Main technologies: ${item.mainTechnologies}`),
+      ).toBeInTheDocument();
       expect(screen.getByText(item.position)).toBeInTheDocument();
     });
   });
