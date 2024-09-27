@@ -1,6 +1,7 @@
 import About from './components/about/about';
 import Experience from './components/experience/experience';
 import Home from './components/home/home';
+import Skills from './components/skills/skills';
 
 export default function IndexPage() {
   return (
@@ -8,6 +9,7 @@ export default function IndexPage() {
       <Home />
       <About />
       <Experience />
+      <Skills />
     </main>
   );
 }
