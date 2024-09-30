@@ -1,4 +1,5 @@
 import About from './components/about/about';
+import Contact from './components/contact/contact';
 import Experience from './components/experience/experience';
 import Home from './components/home/home';
 import Skills from './components/skills/skills';
@@ -10,6 +11,7 @@ export default function IndexPage() {
       <About />
       <Experience />
       <Skills />
+      <Contact />
     </main>
   );
 }
