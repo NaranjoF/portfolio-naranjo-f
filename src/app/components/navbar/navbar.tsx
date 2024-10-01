@@ -42,6 +42,7 @@ export default function Navbar() {
       <NavbarMobile
         navbarLinks={navBarLinks}
         shouldShowMobileNavbar={shouldShowMobileNavbar}
+        closeMobileNavbar={() => setShouldShowMobileNavbar(false)}
       />
       <nav className="hidden md:flex">
         <ul className="flex list-none">

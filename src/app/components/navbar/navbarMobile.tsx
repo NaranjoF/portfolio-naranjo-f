@@ -3,6 +3,7 @@ import { v4 as uuidv4 } from 'uuid';
 type Props = {
   navbarLinks: string[];
   shouldShowMobileNavbar: boolean;
+  closeMobileNavbar: () => void;
 };
 
 export const navBarMobileTestId = 'navbar-mobile';
@@ -10,6 +11,7 @@ export const navBarMobileTestId = 'navbar-mobile';
 export default function NavbarMobile({
   navbarLinks,
   shouldShowMobileNavbar,
+  closeMobileNavbar,
 }: Readonly<Props>) {
   return (
     <div
@@ -24,7 +26,11 @@ export default function NavbarMobile({
                 key={uuidv4()}
                 className="text-white text-center text-xl hover:bg-gray-10 hover:rounded-full transition-all my-2 w-full h-full"
               >
-                <a href={`#${link}`} data-testid={`navbar-mobile-link-${link}`}>
+                <a
+                  href={`#${link}`}
+                  data-testid={`navbar-mobile-link-${link}`}
+                  onClick={closeMobileNavbar}
+                >
                   {link}
                 </a>
               </li>
