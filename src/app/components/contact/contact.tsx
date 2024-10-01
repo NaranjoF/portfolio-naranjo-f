@@ -32,26 +32,21 @@ export default function Contact() {
                 Contact me through
               </p>
               <div className="flex justify-center items-center flex-row">
-                <button
-                  type="button"
-                  className="bg-white rounded-full text-black py-2 px-4 mr-3 hover:scale-105 transition-all "
+                <a
+                  href={process.env.NEXT_PUBLIC_LINKEDIN_URL}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="bg-white rounded-full text-black py-2 px-4 mr-3 hover:scale-105 transition-all inline-block text-center"
                 >
-                  <a
-                    href={process.env.NEXT_PUBLIC_LINKEDIN_URL}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    LinkedIn
-                  </a>
-                </button>
-                <button
-                  type="button"
-                  className="bg-gray-10 rounded-full text-white py-2 px-4 border border-gray-20 hover:scale-105 transition-all cursor-pointer"
+                  LinkedIn
+                </a>
+
+                <a
+                  href={`mailto:${process.env.NEXT_PUBLIC_EMAIL}`}
+                  className="bg-gray-10 rounded-full text-white py-2 px-4 border border-gray-20 hover:scale-105 transition-all cursor-pointer w-full h-full inline-block text-center"
                 >
-                  <a href={`mailto:${process.env.NEXT_PUBLIC_EMAIL}`}>
-                    Email me
-                  </a>
-                </button>
+                  Email me
+                </a>
               </div>
             </div>
           </div>
