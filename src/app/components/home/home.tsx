@@ -29,10 +29,10 @@ export default function Home() {
 
       <div className="flex justify-center flex-col text-center xl:text-left">
         <div className="flex justify-center flex-col">
-          <h1 className="text-grey-40 font-semibold text-3xl md:text-4xl xl:text-3xl mb-2">
+          <h1 className="text-grey-40 font-semibold text-3xl md:text-4xl xl:text-3xl 3xl:text-4xl mb-2">
             Hi! I am Facundo Naranjo, a Full Stack Dev.
           </h1>
-          <p className="text-sm md:text-lg xl:text-base text-white-50">
+          <p className="text-sm md:text-lg xl:text-base 3xl:text-xl text-white-50">
             Based in Argentina, I specialize in creating intuitive user
             experiences and developing robust backend systems. I am deeply
             committed to problem-solving and constantly learning to stay
@@ -41,13 +41,13 @@ export default function Home() {
         </div>
 
         <div className="flex flex-col justify-center mt-2">
-          <p className="text-base md:text-lg xl:text-base mb-2">
+          <p className="text-base md:text-lg xl:text-base 3xl:text-lg mb-2">
             Would you like to know more about me?
           </p>
           <div className="flex flex-row justify-center xl:justify-start">
             <a href={`#${Sections.ABOUT}`}>
               <button
-                className="bg-white text-black p-3 rounded-full text-sm md:text-base md:p-4 xl:p-3 xl:text-sm mr-3 transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-105 duration-150"
+                className="bg-white text-black p-3 rounded-full text-sm md:text-base md:p-4 xl:p-3 xl:text-sm 3xl:text-lg mb-2 mr-3 transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-105 duration-150"
                 type="button"
               >
                 Go to About
@@ -55,7 +55,7 @@ export default function Home() {
             </a>
             <a href={`#${Sections.EXPERIENCE}`}>
               <button
-                className="bg-gray-10 p-3 rounded-full text-sm transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-105 duration-150 md:text-base md:p-4 xl:p-3 xl:text-sm"
+                className="bg-gray-10 p-3 rounded-full text-sm transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-105 duration-150 md:text-base md:p-4 xl:p-3 xl:text-sm 3xl:text-lg"
                 type="button"
               >
                 Go to Experience
