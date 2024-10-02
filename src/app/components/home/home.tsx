@@ -32,7 +32,7 @@ export default function Home() {
           <h1 className="text-grey-40 font-semibold text-3xl md:text-4xl xl:text-3xl mb-2">
             Hi! I am Facundo Naranjo, a Full Stack Dev.
           </h1>
-          <p className="text-sm md:text-lg xl:text-sm text-white-50">
+          <p className="text-sm md:text-lg xl:text-base text-white-50">
             Based in Argentina, I specialize in creating intuitive user
             experiences and developing robust backend systems. I am deeply
             committed to problem-solving and constantly learning to stay
