@@ -49,7 +49,7 @@ export default function Navbar() {
           {navBarLinks.map(link => (
             <li key={uuidv4()}>
               <a
-                className="text-white text-sm py-3 px-4 hover:bg-gray-10 hover:rounded-full transition-all"
+                className="text-white text-sm 3xl:text-lg py-3 px-4 hover:bg-gray-10 hover:rounded-full transition-all"
                 href={`#${link}`}
                 data-testid={`${navBarLinkTestId}${link}`}
               >
