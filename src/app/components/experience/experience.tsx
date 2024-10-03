@@ -12,13 +12,13 @@ export default function Experience() {
       data-testid={experienceTestId}
     >
       <div className="pb-3 flex flex-col justify-center items-center">
-        <h2 className="font-semibold text-2xl md:text-3xl xl:text-2xl">
+        <h2 className="font-semibold text-2xl md:text-3xl xl:text-2xl 3xl:text-3xl">
           Experience
         </h2>
-        <p className="text-gray-40">Discover my work</p>
+        <p className="text-gray-40 3xl:text-xl">Discover my work</p>
       </div>
 
-      <p className="text-sm md:text-lg xl:text-sm text-white-50 text-center px-8 xl:px-64">
+      <p className="text-sm md:text-lg xl:text-base 3xl:text-xl text-white-50 text-center px-8 xl:px-64">
         Check out my experience as a developer to see how I can bring value to
         your projects and team.
       </p>
