@@ -24,12 +24,13 @@ export default function NavbarMobile({
             {navbarLinks.map(link => (
               <li
                 key={uuidv4()}
-                className="text-white text-center text-xl hover:bg-gray-10 hover:rounded-full transition-all my-2 w-full h-full"
+                className="text-white text-center text-xl hover:bg-gray-10 hover:rounded-full transition-all my-2 w-full h-full flex"
               >
                 <a
                   href={`#${link}`}
                   data-testid={`navbar-mobile-link-${link}`}
                   onClick={closeMobileNavbar}
+                  className="w-full"
                 >
                   {link}
                 </a>
