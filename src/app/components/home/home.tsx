@@ -41,7 +41,7 @@ export default function Home() {
         </div>
 
         <div className="flex flex-col justify-center mt-2">
-          <p className="text-base md:text-lg xl:text-base 3xl:text-lg mb-2">
+          <p className="text-base md:text-lg xl:text-base 3xl:text-xl mb-2">
             Would you like to know more about me?
           </p>
           <div className="flex flex-row justify-center xl:justify-start">
