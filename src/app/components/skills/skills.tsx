@@ -16,13 +16,13 @@ export default function Skills() {
       data-testid={skillsTestId}
     >
       <div className="pb-3 flex flex-col justify-center items-center">
-        <h2 className="font-semibold text-2xl md:text-3xl xl:text-2xl">
+        <h2 className="font-semibold text-2xl md:text-3xl xl:text-2xl 3xl:text-3xl">
           Skills
         </h2>
-        <p className="text-gray-40">Discover my skills</p>
+        <p className="text-gray-40 3xl:text-xl">Discover my skills</p>
       </div>
 
-      <p className="text-sm md:text-lg xl:text-sm text-white-50 text-center px-8 xl:px-64">
+      <p className="text-sm md:text-lg xl:text-base 3xl:text-xl text-white-50 text-center px-8 xl:px-64">
         Here are the main tools I use to build solutions for both the frontend
         and backend.
       </p>
