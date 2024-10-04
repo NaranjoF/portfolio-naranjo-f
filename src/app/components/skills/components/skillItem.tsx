@@ -17,7 +17,7 @@ export default function SkillItem({
   return (
     <div className="flex flex-col justify-center items-center px-3">
       <div className="relative w-[5rem] h-[5rem] 3xl:w-[6rem] 3xl:h-[6rem] hover:scale-105 transition-all cursor-pointer mb-2">
-        <a href={link} target="_blank" rel="noreferrer">
+        <a href={link} target="_blank" rel="noreferrer" data-testid={itemName}>
           <Image
             src={skillsIcons.iconContainer}
             alt="Rounded black background with gray star details."
