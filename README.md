@@ -13,7 +13,7 @@ You can see the live portfolio [here](https://portfolio-naranjo-f.vercel.app/).
 - **Testing:** Jest, Cypress, React testing library.
 - **Development Tools:**: ESlint, Lint-staged, Husky, Prettier.
 
-- ## 📧 Contact
+## 📧 Contact
 
 I'm always open to connecting and discussing new opportunities! Feel free to reach out through any of the following channels:
 
