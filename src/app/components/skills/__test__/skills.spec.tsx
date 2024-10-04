@@ -20,19 +20,23 @@ describe('Skills section', () => {
     render(<Skills />);
 
     programmingLanguagesAndOSBlock.items.forEach(item => {
-      expect(screen.getByText(item.name)).toBeInTheDocument();
+      expect(screen.getByTestId(item.name)).toBeInTheDocument();
+      expect(screen.getByTestId(item.name)).toHaveAttribute('href', item.link);
     });
 
     frontendBlock.items.forEach(item => {
-      expect(screen.getByText(item.name)).toBeInTheDocument();
+      expect(screen.getByTestId(item.name)).toBeInTheDocument();
+      expect(screen.getByTestId(item.name)).toHaveAttribute('href', item.link);
     });
 
     backendAndCloudBlock.items.forEach(item => {
-      expect(screen.getByText(item.name)).toBeInTheDocument();
+      expect(screen.getByTestId(item.name)).toBeInTheDocument();
+      expect(screen.getByTestId(item.name)).toHaveAttribute('href', item.link);
     });
 
     developmentAndAutomationBlock.items.forEach(item => {
-      expect(screen.getByText(item.name)).toBeInTheDocument();
+      expect(screen.getByTestId(item.name)).toBeInTheDocument();
+      expect(screen.getByTestId(item.name)).toHaveAttribute('href', item.link);
     });
   });
 });
