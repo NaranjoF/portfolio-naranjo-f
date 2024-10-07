@@ -11,7 +11,7 @@ export default function Contact() {
       data-testid={contactTestId}
     >
       <div className="my-14 flex justify-center items-center">
-        <div className="w-[90%] h-[30rem] md:bg-[url('/images/backgroundContactTablet.svg')] xl:bg-[url('/images/backgroundContact.svg')] bg-cover xl:bg-center flex flex-col justify-between py-8 xl:py-16 items-center border border-gray-12 rounded-2xl shadow-sm shadow-black bg-gradient-to-b from-[#1A1A1A] from-[-10%] to-[rgba(26,26,26,0)] to-[68%]">
+        <div className="w-[90%] h-[32rem] md:h-[30rem] md:bg-[url('/images/backgroundContactTablet.svg')] xl:bg-[url('/images/backgroundContact.svg')] bg-cover xl:bg-center flex flex-col justify-between py-8 xl:py-10 3xl:py-8 items-center border border-gray-12 rounded-2xl shadow-sm shadow-black bg-gradient-to-b from-[#1A1A1A] from-[-10%] to-[rgba(26,26,26,0)] to-[68%]">
           <div className="flex flex-col justify-center items-center">
             <p className="text-base md:text-2xl 3xl:text-3xl">
               Would you like to reach out to me?
@@ -57,6 +57,12 @@ export default function Contact() {
               alt="Rounded logo showing a white dragon."
               className="w-[7rem] h-[7rem]"
             />
+            <a
+              href={process.env.NEXT_PUBLIC_GITHUB_PROJECT_URL}
+              className="mt-3 transition-all hover:text-white-50 3xl:text-lg"
+            >
+              See this repository on GitHub
+            </a>
           </div>
         </div>
       </div>
