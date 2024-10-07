@@ -58,7 +58,9 @@ export default function Contact() {
               className="w-[7rem] h-[7rem]"
             />
             <a
-              href={process.env.NEXT_PUBLIC_GITHUB_PROJECT_URL}
+              href={process.env.NEXT_PUBLIC_GITHUB_REPO_URL}
+              target="_blank"
+              rel="noreferrer"
               className="mt-3 transition-all hover:text-white-50 3xl:text-lg"
             >
               See this repository on GitHub
