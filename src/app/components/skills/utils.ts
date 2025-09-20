@@ -20,48 +20,6 @@ export const programmingLanguagesAndOSBlock = {
   ],
 };
 
-export const frontendBlock = {
-  title: 'Frontend technologies',
-  items: [
-    {
-      name: 'Next.js',
-      logo: skillsIcons.nextLogo,
-      logoAlt: 'Next.js white logo',
-      link: 'https://nextjs.org/',
-    },
-    {
-      name: 'React.js',
-      logo: skillsIcons.reactLogo,
-      logoAlt: 'React.js white logo',
-      link: 'https://react.dev/',
-    },
-    {
-      name: 'Tailwind',
-      logo: skillsIcons.tailwindLogo,
-      logoAlt: 'Tailwind CSS white logo',
-      link: 'https://tailwindcss.com/',
-    },
-    {
-      name: 'Redux',
-      logo: skillsIcons.reduxLogo,
-      logoAlt: 'Redux white logo',
-      link: 'https://redux-toolkit.js.org/',
-    },
-    {
-      name: 'Axios',
-      logo: skillsIcons.axiosLogo,
-      logoAlt: 'Axios white logo',
-      link: 'https://axios-http.com/',
-    },
-    {
-      name: 'Formik',
-      logo: skillsIcons.formikLogo,
-      logoAlt: 'Formik white logo',
-      link: 'https://formik.org/',
-    },
-  ],
-};
-
 export const backendAndCloudBlock = {
   title: 'Backend technologies and Cloud',
   items: [
@@ -107,6 +65,12 @@ export const backendAndCloudBlock = {
       logoAlt: 'AWS white logo',
       link: 'https://aws.amazon.com/',
     },
+    {
+      name: 'RabbitMQ',
+      logo: skillsIcons.rabbitMQLogo,
+      logoAlt: 'RabbitMQ white logo',
+      link: 'https://www.rabbitmq.com/',
+    },
   ],
 };
 
@@ -118,12 +82,6 @@ export const developmentAndAutomationBlock = {
       logo: skillsIcons.jestLogo,
       logoAlt: 'Jest white logo',
       link: 'https://jestjs.io/',
-    },
-    {
-      name: 'Cypress',
-      logo: skillsIcons.cypressLogo,
-      logoAlt: 'Cypress white logo',
-      link: 'https://www.cypress.io/',
     },
     {
       name: 'Git',

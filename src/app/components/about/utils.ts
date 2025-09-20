@@ -4,14 +4,14 @@ export const aboutMeItems = [
   {
     title: 'Soft Skills for Problem Solving',
     description:
-      'To achieve goals, it is essential to master and continuously learn soft skills. My strong soft skills help me create a positive work environment where everyone can comfortably work together to get things done.',
+      'I use strong soft skills to drive goals and build a positive, collaborative workplace.',
     icon: aboutMeIcons.softSkills,
     iconAlt: 'An icon depicting three people.',
   },
   {
     title: 'Brilliant Mind for Challenges',
     description:
-      'I excel at solving complex problems and enjoy the process. I believe every issue has a solution, so I stay focused and calm to find it, turning challenges into opportunities for growth and learning.',
+      'Challenges inspire me to think deeper, solve smarter, and keep growing.',
     icon: aboutMeIcons.brilliantMind,
     iconAlt:
       'A white icon of a light bulb with a lightning bolt in the center.',
@@ -19,28 +19,28 @@ export const aboutMeItems = [
   {
     title: 'Fast Learner and Adaptable Solver',
     description:
-      'I quickly master new skills and reinforce those I have already learned. I enjoy learning from my colleagues and believe there is always room for improvement, which drives me to keep growing and evolving.',
+      'I’m fueled by learning, collaboration, and the belief that there’s always room to improve.',
     icon: aboutMeIcons.fastLearner,
     iconAlt: 'An icon of a white book.',
   },
   {
     title: 'Coding Enthusiast Since Age 8',
     description:
-      'I learned to program at 8 years old. My passion for learning and creativity from a young age led me here. I enjoy creating things, and programming lets me channel that creativity.',
+      'I’ve been deeply committed to programming since childhood, driven by curiosity and creativity.',
     icon: aboutMeIcons.earlyCommitment,
     iconAlt: 'A white chart showing growth.',
   },
   {
     title: 'Resilient Strength in Challenges',
     description:
-      'One key to growth is stumbling and getting back up. Learning from mistakes and trying again, better, is the key to success. They say a winner is just a loser who tried one more time.',
+      'A winner is nothing more than a loser who found the courage to try again.',
     icon: aboutMeIcons.resilence,
     iconAlt: 'A white chart showing growth.',
   },
   {
     title: 'Committed to Excellence',
     description:
-      'What happens if we ignore a small detail? Probably nothing. But if we overlook many small details, the quality of what we are creating may suffer. That is why I focus on details, they make a difference.',
+      'One small detail might not matter, but many can define the quality of the whole that’s why I focus on details.',
     icon: aboutMeIcons.attentionToDetail,
     iconAlt: 'A white chart showing growth.',
   },
