@@ -1,7 +1,6 @@
 import { Sections } from '../navbar/utils';
 import {
   programmingLanguagesAndOSBlock,
-  frontendBlock,
   backendAndCloudBlock,
   developmentAndAutomationBlock,
   skillsTestId,
@@ -23,8 +22,7 @@ export default function Skills() {
       </div>
 
       <p className="text-sm md:text-lg xl:text-base 3xl:text-xl text-white-50 text-center px-8 xl:px-64">
-        Here are the main tools I use to build solutions for both the frontend
-        and backend.
+        Here are the main tools I use to build solutions for the backend.
       </p>
 
       <div className="my-14 flex flex-col justify-center items-center">
@@ -32,14 +30,6 @@ export default function Skills() {
           blockTitle={programmingLanguagesAndOSBlock.title}
           blockItems={programmingLanguagesAndOSBlock.items}
           cols="grid-cols-2"
-        />
-
-        <div className="flex h-[0.5px] w-3/4 bg-gray-12 my-9" />
-
-        <SkillBlock
-          blockTitle={frontendBlock.title}
-          blockItems={frontendBlock.items}
-          cols="grid-cols-4"
         />
 
         <div className="flex h-[0.5px] w-3/4 bg-gray-12 my-9" />
