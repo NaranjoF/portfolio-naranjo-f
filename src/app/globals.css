@@ -6,6 +6,12 @@ html {
   scroll-behavior: smooth;
 }
 
+.swiper-pagination-bullet {
+  background-color: #ffffff !important;
+  width: 12px !important;
+  height: 12px !important;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;

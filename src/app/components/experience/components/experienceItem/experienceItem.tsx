@@ -3,17 +3,19 @@ import { experienceItemAssets } from './assets/experienceItemAssets';
 
 type Props = {
   companyLogo: string;
+  companyLogoClasses: string;
   companyLogoAlt: string;
   companyName: string;
   companyLocation: string;
   date: string;
   position: string;
   mainTechnologies: string;
-  description: string;
+  description: string[];
 };
 
 export default function ExperienceItem({
   companyLogo,
+  companyLogoClasses,
   companyLogoAlt,
   companyName,
   position,
@@ -23,7 +25,7 @@ export default function ExperienceItem({
   description,
 }: Readonly<Props>) {
   return (
-    <div className="max-w-[20rem] md:max-w-[42rem] 3xl:max-w-[52rem] border border-gray-12 rounded-2xl p-10 flex flex-col justify-center items-center bg-gradient-to-b from-[#1A1A1A] from-[-10%] to-[rgba(26,26,26,0)] to-[68%] shadow-sm shadow-black">
+    <div className="max-w-[20rem] md:max-w-[42rem] 3xl:max-w-[52rem] border border-gray-12 rounded-2xl p-10 flex flex-col justify-start items-center bg-gradient-to-b from-[#1A1A1A] from-[-10%] to-[rgba(26,26,26,0)] to-[68%] shadow-sm shadow-black h-[43rem] xl:h-[55rem]">
       <div className="border border-gray-20 rounded-2xl relative">
         <Image
           src={experienceItemAssets.backgroundItem}
@@ -33,7 +35,7 @@ export default function ExperienceItem({
 
         <Image
           src={companyLogo}
-          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[9rem] md:w-[13rem] 3xl:w-[18rem]"
+          className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ${companyLogoClasses}`}
           alt={companyLogoAlt}
         />
 
@@ -61,10 +63,12 @@ export default function ExperienceItem({
           <p>Main technologies: {mainTechnologies}</p>
         </div>
 
-        <div className="mt-3 text-sm xl:text-base 3xl:text-xl flex justify-start w-full">
-          <p className="text-white-55 text-center md:text-left">
-            {description}
-          </p>
+        <div className="mt-3 text-sm xl:text-base 3xl:text-xl w-full">
+          <ul className="list-disc list-outside xl:list-disc xl:list-inside text-white-55 text-center center md:text-left space-y-2 marker:text-white">
+            {description.map(bullet => (
+              <li>{bullet}</li>
+            ))}
+          </ul>
         </div>
       </div>
     </div>

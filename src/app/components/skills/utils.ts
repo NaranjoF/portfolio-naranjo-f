@@ -48,18 +48,6 @@ export const backendAndCloudBlock = {
       link: 'https://www.postgresql.org/',
     },
     {
-      name: 'Github',
-      logo: skillsIcons.githubLogo,
-      logoAlt: 'Github white logo',
-      link: 'https://github.com/',
-    },
-    {
-      name: 'Actions',
-      logo: skillsIcons.githubActions,
-      logoAlt: 'Github Actions white logo',
-      link: 'https://github.com/features/actions',
-    },
-    {
       name: 'AWS',
       logo: skillsIcons.awsLogo,
       logoAlt: 'AWS white logo',
@@ -106,6 +94,18 @@ export const developmentAndAutomationBlock = {
       logo: skillsIcons.huskyLogo,
       logoAlt: 'Husky white logo',
       link: 'https://github.com/typicode/husky#readme',
+    },
+    {
+      name: 'Github',
+      logo: skillsIcons.githubLogo,
+      logoAlt: 'Github white logo',
+      link: 'https://github.com/',
+    },
+    {
+      name: 'Actions',
+      logo: skillsIcons.githubActions,
+      logoAlt: 'Github Actions white logo',
+      link: 'https://github.com/features/actions',
     },
   ],
 };
