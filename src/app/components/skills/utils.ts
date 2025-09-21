@@ -20,48 +20,6 @@ export const programmingLanguagesAndOSBlock = {
   ],
 };
 
-export const frontendBlock = {
-  title: 'Frontend technologies',
-  items: [
-    {
-      name: 'Next.js',
-      logo: skillsIcons.nextLogo,
-      logoAlt: 'Next.js white logo',
-      link: 'https://nextjs.org/',
-    },
-    {
-      name: 'React.js',
-      logo: skillsIcons.reactLogo,
-      logoAlt: 'React.js white logo',
-      link: 'https://react.dev/',
-    },
-    {
-      name: 'Tailwind',
-      logo: skillsIcons.tailwindLogo,
-      logoAlt: 'Tailwind CSS white logo',
-      link: 'https://tailwindcss.com/',
-    },
-    {
-      name: 'Redux',
-      logo: skillsIcons.reduxLogo,
-      logoAlt: 'Redux white logo',
-      link: 'https://redux-toolkit.js.org/',
-    },
-    {
-      name: 'Axios',
-      logo: skillsIcons.axiosLogo,
-      logoAlt: 'Axios white logo',
-      link: 'https://axios-http.com/',
-    },
-    {
-      name: 'Formik',
-      logo: skillsIcons.formikLogo,
-      logoAlt: 'Formik white logo',
-      link: 'https://formik.org/',
-    },
-  ],
-};
-
 export const backendAndCloudBlock = {
   title: 'Backend technologies and Cloud',
   items: [
@@ -90,22 +48,16 @@ export const backendAndCloudBlock = {
       link: 'https://www.postgresql.org/',
     },
     {
-      name: 'Github',
-      logo: skillsIcons.githubLogo,
-      logoAlt: 'Github white logo',
-      link: 'https://github.com/',
-    },
-    {
-      name: 'Actions',
-      logo: skillsIcons.githubActions,
-      logoAlt: 'Github Actions white logo',
-      link: 'https://github.com/features/actions',
-    },
-    {
       name: 'AWS',
       logo: skillsIcons.awsLogo,
       logoAlt: 'AWS white logo',
       link: 'https://aws.amazon.com/',
+    },
+    {
+      name: 'RabbitMQ',
+      logo: skillsIcons.rabbitMQLogo,
+      logoAlt: 'RabbitMQ white logo',
+      link: 'https://www.rabbitmq.com/',
     },
   ],
 };
@@ -118,12 +70,6 @@ export const developmentAndAutomationBlock = {
       logo: skillsIcons.jestLogo,
       logoAlt: 'Jest white logo',
       link: 'https://jestjs.io/',
-    },
-    {
-      name: 'Cypress',
-      logo: skillsIcons.cypressLogo,
-      logoAlt: 'Cypress white logo',
-      link: 'https://www.cypress.io/',
     },
     {
       name: 'Git',
@@ -148,6 +94,18 @@ export const developmentAndAutomationBlock = {
       logo: skillsIcons.huskyLogo,
       logoAlt: 'Husky white logo',
       link: 'https://github.com/typicode/husky#readme',
+    },
+    {
+      name: 'Github',
+      logo: skillsIcons.githubLogo,
+      logoAlt: 'Github white logo',
+      link: 'https://github.com/',
+    },
+    {
+      name: 'Actions',
+      logo: skillsIcons.githubActions,
+      logoAlt: 'Github Actions white logo',
+      link: 'https://github.com/features/actions',
     },
   ],
 };

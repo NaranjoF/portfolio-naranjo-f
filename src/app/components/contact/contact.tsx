@@ -22,8 +22,7 @@ export default function Contact() {
                 Looking to collaborate on a web development project? Feel free
                 to reach out! I&apos;m always open to discussing new
                 opportunities. You can contact me through my social media
-                channels for any inquiries or project proposals. Let&apos;s
-                create something great together!
+                channels for any inquiries or project proposals.
               </p>
             </div>
 
@@ -45,7 +44,7 @@ export default function Contact() {
                   href={`mailto:${process.env.NEXT_PUBLIC_EMAIL}`}
                   className="bg-gray-10 rounded-full text-white py-2 px-4 border border-gray-20 hover:scale-105 transition-all cursor-pointer w-full h-full inline-block text-center 3xl:text-xl"
                 >
-                  Email me
+                  Email
                 </a>
               </div>
             </div>
@@ -61,7 +60,7 @@ export default function Contact() {
               href={process.env.NEXT_PUBLIC_GITHUB_REPO_URL}
               target="_blank"
               rel="noreferrer"
-              className="mt-3 transition-all hover:text-white-50 3xl:text-lg"
+              className="mt-3 transition-all hover:text-white-50 3xl:text-lg cursor-pointer"
             >
               See this repository on GitHub
             </a>

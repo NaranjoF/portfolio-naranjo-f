@@ -19,10 +19,10 @@ export default function About() {
       </div>
 
       <p className="text-sm md:text-lg xl:text-base 3xl:text-xl text-white-50 text-center px-8 xl:px-64">
-        With a strong determination to achieve excellent results and a focus on
-        best practices, I build complex systems every day that provide
-        solutions. I was raised with the mindset that nothing is impossible and
-        that everything comes in due time.
+        I started programming in JavaScript when I was eight years old, and I
+        haven’t stopped learning since. Although I began working as a full stack
+        developer, my greatest passion is backend development the field in which
+        I specialize.
       </p>
 
       <div className="my-14 mx-0 xl:m-14">

@@ -1,9 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import 'swiper/css';
+@import 'swiper/css/pagination';
 
 html {
   scroll-behavior: smooth;
+}
+
+.swiper-pagination-bullet {
+  background-color: #ffffff !important;
+  width: 12px !important;
+  height: 12px !important;
 }
 
 :root {
