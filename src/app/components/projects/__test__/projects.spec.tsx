@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import Experience from '../experience';
-import { experienceTestId } from '../utils';
-import { experienceList } from '../components/experienceItem/assets/experienceItemAssets';
+import Projects from '../projects';
+import { projectsTestId } from '../utils';
+import { projectsList } from '../components/assets/projectItemsAssets';
 
 jest.mock('swiper/react', () => {
   return {
@@ -19,19 +19,18 @@ jest.mock('swiper/modules', () => ({
   Pagination: () => null,
 }));
 
-describe('Experience section', () => {
-  it('Should render the experience component', () => {
-    render(<Experience />);
+describe('Projects section', () => {
+  it('Should render the projects component', () => {
+    render(<Projects />);
 
-    expect(screen.getByTestId(experienceTestId)).toBeInTheDocument();
+    expect(screen.getByTestId(projectsTestId)).toBeInTheDocument();
   });
 
-  it('Should render all the experience items', () => {
-    render(<Experience />);
+  it('Should render all the projects items', () => {
+    render(<Projects />);
 
-    experienceList.forEach(item => {
-      expect(screen.getByText(item.companyName)).toBeInTheDocument();
-      expect(screen.getByText(item.companyLocation)).toBeInTheDocument();
+    projectsList.forEach(item => {
+      expect(screen.getByText(item.projectName)).toBeInTheDocument();
       expect(screen.getByText(item.date)).toBeInTheDocument();
       item.description.forEach(bullet => {
         expect(screen.getByText(bullet)).toBeInTheDocument();
@@ -39,7 +38,6 @@ describe('Experience section', () => {
       expect(
         screen.getByText(`Main technologies: ${item.mainTechnologies}`),
       ).toBeInTheDocument();
-      expect(screen.getByText(item.position)).toBeInTheDocument();
     });
   });
 });

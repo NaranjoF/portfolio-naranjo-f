@@ -2,8 +2,6 @@
 
 import { v4 as uuidv4 } from 'uuid';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 import { Sections } from '../navbar/utils';
 import { projectsList } from './components/assets/projectItemsAssets';

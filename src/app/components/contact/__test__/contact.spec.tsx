@@ -20,7 +20,7 @@ describe('Contact section', () => {
       process.env.NEXT_PUBLIC_LINKEDIN_URL,
     );
 
-    expect(screen.getByText('Email me')).toHaveAttribute(
+    expect(screen.getByText('Email')).toHaveAttribute(
       'href',
       `mailto:${process.env.NEXT_PUBLIC_EMAIL}`,
     );
