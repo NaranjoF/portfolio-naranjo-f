@@ -2,6 +2,7 @@ import About from './components/about/about';
 import Contact from './components/contact/contact';
 import Experience from './components/experience/experience';
 import Home from './components/home/home';
+import Projects from './components/projects/projects';
 import Skills from './components/skills/skills';
 
 export default function IndexPage() {
@@ -10,6 +11,7 @@ export default function IndexPage() {
       <Home />
       <About />
       <Experience />
+      <Projects />
       <Skills />
       <Contact />
     </main>
